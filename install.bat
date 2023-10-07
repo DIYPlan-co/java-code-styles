@@ -1,4 +1,4 @@
-REM Installs Square's IntelliJ configs into your user configs.
+REM Installs DiyPlan's IntelliJ configs into your user configs.
 @echo off
 echo Installing Square IntelliJ configs...
 
@@ -12,7 +12,7 @@ for /D %%i in ("%userprofile%"\.IdeaIC*\settingsRepository\repository) do call :
 for /D %%i in ("%userprofile%"\.IntelliJIdea*\settingsRepository\repository) do call :copy_config "%%i"
 
 echo.
-echo Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'Square' or 'SquareAndroid'.
+echo Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'DIYPlan' or 'DIYPlanAndroid'.
 exit /b
 
 REM sub function for copy config files
